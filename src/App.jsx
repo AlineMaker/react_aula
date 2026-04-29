@@ -1,7 +1,7 @@
 import ItemLista from "./itemLista";
 
 function App() {
-  const listaMercado = ["Banana"];
+  const listaMercado = ["Banana", "maca"];
 
   return (
     <>
@@ -10,12 +10,11 @@ function App() {
       <button>Adicionar</button>
 
       <ul>
-        <li>
-          <ItemLista />
-          <ItemLista />
-          <ItemLista />
-          <ItemLista />
-        </li>
+        {listaMercado.map(() => {})}
+        <ItemLista />
+        <ItemLista />
+        <ItemLista />
+        <ItemLista />
       </ul>
     </>
   );
